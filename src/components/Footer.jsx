@@ -507,7 +507,7 @@ const Footer = ({ setCurrentPage }) => {
               </div>
 
               <div className="text-gray-400 text-xs md:text-right">
-                © 2027 AIFAGen Labs Pvt. Ltd. All rights reserved.
+                © 2025 AIFAGen Labs Pvt. Ltd. All rights reserved.
               </div>
             </div>
 
