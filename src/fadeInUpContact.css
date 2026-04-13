@@ -1,0 +1,16 @@
+@keyframes fadeInUpContact {
+  0% {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up-contact {
+  animation: fadeInUpContact 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  opacity: 1 !important;
+  transform: none !important;
+}
