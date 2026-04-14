@@ -370,21 +370,23 @@ const AboutPage = ({ setCurrentPage }) => {
           </div>
 
           {/* Timeline */}
-          <div className="relative pl-8 space-y-8">
-            {/* Vertical Line */}
-            <div className="absolute left-3 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-gray-700"></div>
+          <div className="relative md:pl-8 space-y-8">
+            {/* Vertical Line - Hidden on mobile, visible on md and up */}
+            <div className="hidden md:block absolute left-3 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-gray-700"></div>
 
             {/* Timeline Item 1 - 2024 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">2024</span>
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
+                    2024
+                  </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   Company Founded
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   AIFAGen Labs established with vision for accessible AI.
                 </p>
               </div>
@@ -392,17 +394,17 @@ const AboutPage = ({ setCurrentPage }) => {
 
             {/* Timeline Item 2 - Q1 2025 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
                     Q1 2025
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   MVP Launch
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   Website and chatbot alpha released to public.
                 </p>
               </div>
@@ -410,17 +412,17 @@ const AboutPage = ({ setCurrentPage }) => {
 
             {/* Timeline Item 3 - Q2 2025 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
                     Q2 2025
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   Partnerships
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   Collaboration portal opens for strategic partners.
                 </p>
               </div>
@@ -428,17 +430,17 @@ const AboutPage = ({ setCurrentPage }) => {
 
             {/* Timeline Item 4 - Q4 2025 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
                     Q4 2025
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   Product Preview
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   First demos of AIFAG and LifeOS showcased.
                 </p>
               </div>
@@ -446,17 +448,17 @@ const AboutPage = ({ setCurrentPage }) => {
 
             {/* Timeline Item 5 - Q1 2027 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
                     Q1 2027
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   Platform Beta
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   Full interactive platform v2 with AI-driven features.
                 </p>
               </div>
@@ -464,17 +466,17 @@ const AboutPage = ({ setCurrentPage }) => {
 
             {/* Timeline Item 6 - Q2 2027 */}
             <div className="relative">
-              <div className="absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition duration-200">
-                <div className="absolute -left-20 top-6 bg-blue-600 rounded-lg px-3 py-2">
-                  <span className="text-white font-semibold text-sm">
+              <div className="hidden md:block absolute -left-6 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-6 hover:border-gray-700 transition duration-200 ml-6 md:ml-0">
+                <div className="md:absolute md:-left-24 md:top-6 inline-block mb-2 md:mb-0 bg-blue-600 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <span className="text-white font-semibold text-xs sm:text-sm">
                     Q2 2027
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 md:mt-4">
                   Global Launch
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   AIFAG & LifeOS released to the world.
                 </p>
               </div>
